@@ -1,0 +1,35 @@
+/* body */
+body {
+    background-color: lightgray;
+}
+
+/* header */
+
+header {
+	text-align: center;
+}
+
+/* header img */
+header img {
+	width: 80%;
+}
+
+/* ul */
+ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-right: auto;
+}
+
+/* ui li */
+ul li {
+    display: inline-block;
+    flex: 0 0 auto;
+    list-style: none;
+    margin: 5px;
+    white-space: nowrap;
+    background-color: lightskyblue;
+    border: 2px dotted blue;
+    border-radius: 3px;
+}
