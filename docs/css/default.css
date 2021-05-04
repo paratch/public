@@ -38,3 +38,9 @@ h1, h2, h3, h4 {
     color: navy;
     text-shadow: gray 1px 1px;
 }
+
+/* span */
+.system-info {
+    color: purple;
+}
+
