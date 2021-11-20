@@ -1,3 +1,3 @@
 # Public Page
 
-This site will be open.
+This site is now open.
