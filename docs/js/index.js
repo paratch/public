@@ -7,6 +7,6 @@ const showHostName = ()=>{
 }
 
 // register event listener
-window.addEventListener('load', ()=>{
+window.addEventListener("load", ()=>{
   showHostName();
 });
