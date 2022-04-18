@@ -1,6 +1,7 @@
 /* light mode */
 :root {
     --color-background: whitesmoke;
+    --color-text: black;
     --color-box: lightskyblue;
     --color-border: blue;
     --color-header: navy;
@@ -12,6 +13,7 @@
 @media (prefers-color-scheme: light) {
     :root {
         --color-background: whitesmoke;
+        --color-text: black;
         --color-box: lightskyblue;
         --color-border: blue;
         --color-header: navy;
@@ -25,10 +27,11 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --color-background: dimgray;
+        --color-text: white;
         --color-box: deepskyblue;
         --color-border: royalblue;
         --color-header: cyan;
-        --color-link: royalblue;
+        --color-link: blue;
         --color-highlight: blue;
         --color-shadow: lightgray;
         --color-system: violet;
@@ -37,6 +40,7 @@
 
 /* body */
 body {
+    color: var(--color-text);
     background-color: var(--color-background);
 }
 
