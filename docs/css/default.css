@@ -1,37 +1,43 @@
 /* light mode */
 :root {
-    --background: whitesmoke;
-    --box: lightskyblue;
-    --border: blue;
-    --header: navy;
-    --shadow: gray;
-    --system: purple;
+    --color-background: whitesmoke;
+    --color-box: lightskyblue;
+    --color-border: blue;
+    --color-header: navy;
+    --color-link: blue;
+    --color-highlight: royalblue;
+    --color-shadow: gray;
+    --color-system: purple;
 }
 @media (prefers-color-scheme: light) {
     :root {
-        --background: whitesmoke;
-        --box: lightskyblue;
-        --border: blue;
-        --header: navy;
-        --shadow: gray;
-        --system: purple;
+        --color-background: whitesmoke;
+        --color-box: lightskyblue;
+        --color-border: blue;
+        --color-header: navy;
+        --color-link: blue;
+        --color-highlight: royalblue;
+        --color-shadow: gray;
+        --color-system: purple;
     }
 }
 /* dark mode */
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: dimgray;
-        --box: deepskyblue;
-        --border: royalblue;
-        --header: cyan;
-        --shadow: lightgray;
-        --system: violet;
+        --color-background: dimgray;
+        --color-box: deepskyblue;
+        --color-border: royalblue;
+        --color-header: cyan;
+        --color-link: royalblue;
+        --color-highlight: blue;
+        --color-shadow: lightgray;
+        --color-system: violet;
     }
 }
 
 /* body */
 body {
-    background-color: var(--background);
+    background-color: var(--color-background);
 }
 
 /* header */
@@ -59,6 +65,9 @@ header {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin-top: 3px;
+    margin-bottom: 8px;
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -67,20 +76,33 @@ header {
     display: inline-block;
     flex: 0 0 auto;
     list-style: none;
-    margin: 4px;
+    margin: 2px 4px 2px 4px;
     white-space: nowrap;
-    background-color: var(--box);
-    border: 2px dotted var(--border);
+    background-color: var(--color-box);
+    border: 2px dotted var(--color-border);
     border-radius: 3px;
 }
 
 /* h1, h2, h3, h4 */
-h1, h2, h3, h4 {
-    color: var(--header);
-    text-shadow: var(--shadow) 1px 1px;
+h1, h2, h3, h4, h5, h6 {
+    margin: 4px;
+    color: var(--color-header);
+    text-shadow: var(--color-shadow) 1px 1px;
+}
+
+/* a */
+a {
+    color: var(--color-link);
+}
+a:link, a:visited {
+    color: var(--color-link);
+    transition: all 250ms 0s;
+}
+a:hover {
+    color: var(--color-highlight);
 }
 
 /* span */
 .system-info {
-    color: var(--system);
+    color: var(--color-system);
 }
