@@ -1,0 +1,26 @@
+:root {
+    --size-image: min(512px, max(256px, 32%));  /* 3 columns */
+    --size-margin-default: 2px;
+    --size-shadow-depth: 2px;
+
+    --color-box-shadow: darkgray;
+    --color-image-hover-on: rgba(192, 192, 192, 0.5);
+    --color-image-hover-off: rgba(16, 16, 16, 0.5);
+}
+
+/* flex container */
+.picture-container {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+/* flex box */
+.picture-container .picture-box {
+    display: block;
+    margin: var(--size-margin-default);
+    box-shadow: var(--color-box-shadow) var(--size-shadow-depth) var(--size-shadow-depth);
+
+    width: var(--size-image);
+    object-fit: contain;
+}

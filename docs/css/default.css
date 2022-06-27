@@ -5,7 +5,8 @@
     --color-box: lightskyblue;
     --color-border: blue;
     --color-header: navy;
-    --color-link: blue;
+    --color-public-link: blue;
+    --color-local-link: midnightblue;
     --color-highlight: royalblue;
     --color-shadow: gray;
     --color-system: purple;
@@ -17,7 +18,8 @@
         --color-box: lightskyblue;
         --color-border: blue;
         --color-header: navy;
-        --color-link: blue;
+        --color-public-link: blue;
+        --color-local-link: midnightblue;
         --color-highlight: royalblue;
         --color-shadow: gray;
         --color-system: purple;
@@ -31,8 +33,9 @@
         --color-box: deepskyblue;
         --color-border: royalblue;
         --color-header: cyan;
-        --color-link: blue;
-        --color-highlight: blue;
+        --color-public-link: blue;
+        --color-local-link: midnightblue;
+        --color-highlight: royalblue;
         --color-shadow: lightgray;
         --color-system: violet;
     }
@@ -96,14 +99,27 @@ h1, h2, h3, h4, h5, h6 {
 
 /* a */
 a {
-    color: var(--color-link);
+    color: var(--color-public-link);
 }
 a:link, a:visited {
-    color: var(--color-link);
+    color: var(--color-public-link);
     transition: all 250ms 0s;
 }
 a:hover {
     color: var(--color-highlight);
+}
+
+a.local {
+    color: var(--color-local-link);
+}
+a.local:link, a.local:visited {
+    color: var(--color-local-link);
+    transition: all 250ms 0s;
+}
+
+/* img */
+img {
+    pointer-events: none;
 }
 
 /* span */
