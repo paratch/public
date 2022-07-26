@@ -49,7 +49,7 @@ body {
 
 /* header */
 header {
-	text-align: center;
+    place-items: center;
 }
 
 /* header img */
@@ -58,13 +58,11 @@ header {
 	object-fit: cover;
 }
 
-/* container */
+/* section */
 .container {
     display: flex;
-    flex-flow: row wrap;
-}
-.container > div {
-    flex: 1;
+    flex-flow: wrap;
+    justify-content: flex-start;
 }
 
 /* ul */
@@ -72,10 +70,7 @@ header {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-top: 3px;
-    margin-bottom: 8px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 3px auto 3px auto;
 }
 
 /* ui li */
@@ -83,7 +78,7 @@ header {
     display: inline-block;
     flex: 0 0 auto;
     list-style: none;
-    margin: 1px 2px 1px 4px;
+    margin: 1px 4px 1px 4px;
     white-space: nowrap;
     background-color: var(--color-box);
     border: 1px dotted var(--color-border);
