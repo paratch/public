@@ -1,3 +1,7 @@
+//
+// index page js
+//
+
 // show hostname of this server
 const showHostName = ()=>{
   // hostname

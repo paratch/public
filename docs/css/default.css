@@ -1,5 +1,8 @@
 /* light mode */
 :root {
+    --size-author-height: 18px;
+    --color-copyright: #08713A;
+
     --color-background: whitesmoke;
     --color-text: black;
     --color-box: lightskyblue;
@@ -120,4 +123,14 @@ img {
 /* span */
 .system-info {
     color: var(--color-system);
+}
+
+/* copyright notice */
+.copyright-notice {
+    color: var(--color-copyright);
+}
+/* author */
+img.author {
+    vertical-align: text-top;
+    height: var(--size-author-height);
 }
