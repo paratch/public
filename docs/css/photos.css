@@ -1,5 +1,5 @@
 :root {
-    --size-image: min(512px, max(256px, 32%));  /* 3 columns */
+    --size-image: clamp(256px, 32%, 512px); /* 3 columns */
     --size-margin-default: 2px;
     --size-shadow-depth: 2px;
 
@@ -23,4 +23,18 @@
 
     width: var(--size-image);
     object-fit: contain;
+}
+
+/* figure image */
+.figure-image {
+    float: right;
+    margin: var(--size-margin-default);
+    width: var(--size-image);
+    object-fit: contain;
+}
+
+/* clearfix */
+.figure-image::after {
+    content: "";
+    clear: both;
 }

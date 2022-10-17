@@ -1,5 +1,7 @@
 /* light mode */
 :root {
+    /* --display-secret: block; */
+    --display-secret: none;
     --size-author-height: 18px;
     --color-copyright: #08713A;
 
@@ -63,9 +65,9 @@ header {
 
 /* section */
 .container {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: flex-start;
+    display: block;
+    margin: auto;
+    width: 95%;
 }
 
 /* ul */
@@ -99,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: var(--color-public-link);
 }
-a:link, a:visited {
+a:any-link {
     color: var(--color-public-link);
     transition: all 250ms 0s;
 }
@@ -107,10 +109,10 @@ a:hover {
     color: var(--color-highlight);
 }
 
-a.local {
+a:not([href^="http"]) {
     color: var(--color-local-link);
 }
-a.local:link, a.local:visited {
+a:not([href^="http"]):any-link {
     color: var(--color-local-link);
     transition: all 250ms 0s;
 }
@@ -133,4 +135,9 @@ img {
 img.author {
     vertical-align: text-top;
     height: var(--size-author-height);
+}
+
+/* none */
+.secret {
+    display: var(--display-secret);
 }
