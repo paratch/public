@@ -16,7 +16,7 @@
 }
 
 /* flex box */
-.picture-container .picture-box {
+.picture-container__picture-box {
     display: block;
     margin: var(--size-margin-default);
     box-shadow: var(--color-box-shadow) var(--size-shadow-depth) var(--size-shadow-depth);
@@ -32,8 +32,7 @@
     width: var(--size-image);
     object-fit: contain;
 }
-
-/* clearfix */
+/* figure image: clearfix */
 .figure-image::after {
     content: "";
     clear: both;
