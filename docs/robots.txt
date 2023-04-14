@@ -1,0 +1,11 @@
+#
+# Robots.txt
+#
+
+# Test UA
+User-agent: TestUa
+Allow: /
+
+# Other UA
+User-agent: *
+Disallow: /
