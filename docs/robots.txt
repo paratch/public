@@ -3,7 +3,7 @@
 #
 
 # Test UA
-User-agent: TestUa
+User-agent: common-user-agent/*
 Allow: /
 
 # Other UA
